@@ -17,14 +17,15 @@ const domInformation = element => {
   console.log(`El id del eleemento seleccionado es \x1b[31m${element.id}\x1b[0m, en el cual tiene la siguiente clase: ${element.classList.value}. El contenido que tiene dicho elemento es: ${element.textContent} y su ancho es de ${element.clientWidth} y su alto es de: ${element.clientHeight}. Este elemento tiene ${element.children.length} elementos hijos: ${element.children[0].id} y ${element.children[1].id} y estos son los valores de cada uno: \n
   • ID: ${element.children[0].id} \n
   \t\t- Contenido: ${element.children[0].classList}\n
-  \t\t- Contenido: ${element.children[0].outerText}\n
+  \t\t- Contenido: ${element.children[0].textContent}\n
   \t\t- Ancho: ${element.children[0].clientWidth}\n
   \t\t- Alto: ${element.children[0].clientHeight}\n
   • ID: ${element.children[1].id} \n
   \t\t- Contenido: ${element.children[1].classList}\n
-  \t\t- Contenido: ${element.children[1].outerText}\n
+  \t\t- Contenido: ${element.children[1].textContent}\n
   \t\t- Ancho: ${element.children[1].clientWidth}\n
   \t\t- Alto: ${element.children[1].clientHeight}\n`);
 };
 
 domInformation(headerElement);
+
